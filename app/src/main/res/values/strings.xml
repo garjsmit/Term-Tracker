@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WGU Term Tracker</string>
+    <string name="mainActivityTitle">WGU Term Tracker</string>
+    <string name="termDetailActivityTitle">Term Information</string>
+    <string name="courseDetailActivityTitle">Course Information</string>
+    <string name="termListActivityTitle">All Terms</string>
+    <string name="editTermActivityTitle">Edit Term</string>
+    <string name="editCourseActivityTitle">Edit Course</string>
+    <string name="editAssessmentActivityTitle">Edit Assessment</string>
+    <string name="editInstructorActivityTitle">Edit Instructor</string>
+    <string name="instructorListActivityTitle">Instructor List</string>
+    <string name="name_Text">Name:</string>
+    <string name="email_Text">Email:</string>
+    <string name="current_term">Current term</string>
+    <string name="view_all_terms">View Terms</string>
+    <string name="view_completed_terms">View completed terms</string>
+    <string name="view_future_terms">View future terms</string>
+    <string name="termName">Term name:</string>
+    <string name="courseName">Course name:</string>
+    <string name="startDate">Start date:</string>
+    <string name="endDate">End date:</string>
+    <string name="addTermButton">Add term</string>
+    <string name="addCourseButton">Add course</string>
+    <string name="courseStatus">Course status:</string>
+    <string name="courseNotes">Course notes:</string>
+    <string name="instructorName">Instructor name:</string>
+    <string name="assessmentName">Assessment name:</string>
+    <string name="assessmentDate">Due date:</string>
+    <string name="assessmentDetailActibityTitle">Assessment Details</string>
+    <string name="selectInstructorActivityTitle">Select Instructor</string>
+    <string name="course_channel_name">channel</string>
+    <string name="course_channel_description">channel description</string>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/courseTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="--CourseName--"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:text="Status:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitleText" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="-----"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitleText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:text="Start Date:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/startDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="-----"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/statusText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="End Date:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/endDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="-----"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/center" />
+
+    <Switch
+        android:id="@+id/startDateSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Notify"
+        app:layout_constraintBottom_toBottomOf="@+id/startDateView"
+        app:layout_constraintStart_toEndOf="@+id/startDateView" />
+
+    <Switch
+        android:id="@+id/endDateSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Notify"
+        app:layout_constraintBottom_toBottomOf="@+id/endDateView"
+        app:layout_constraintStart_toEndOf="@+id/endDateView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:text="Instructor:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/instructorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="-----"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/center" />
+
+    <TextView
+        android:id="@+id/courseNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:text="@string/courseNotes"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/courseNotesText"
+        android:layout_width="362dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseNotes" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Assessments:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/courseNotesText" />
+
+    <ListView
+        android:id="@+id/assessmentListView"
+        android:layout_width="348dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/wgu_light_blue"
+        android:clickable="true"
+        android:onClick="editCourse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
